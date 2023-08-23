@@ -631,6 +631,10 @@ video {
   margin-top: .7rem;
 }
 
+.mt-\[4rem\] {
+  margin-top: 4rem;
+}
+
 .flex {
   display: flex;
 }
@@ -797,6 +801,10 @@ video {
 
 .w-\[66\%\] {
   width: 66%;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -1035,6 +1043,10 @@ video {
 
 .pl-\[7\.5rem\] {
   padding-left: 7.5rem;
+}
+
+.pr-\[\.3rem\] {
+  padding-right: .3rem;
 }
 
 .text-center {
