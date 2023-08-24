@@ -9,32 +9,44 @@
   </head>
   <body>
     <nav class="w-[100%] p-[1rem] bg-[#2F0468]">
-      <div class="w-[40%] mx-auto flex justify-between text-[white]">
-        <a href="#" class="text-[white] font-semibold text-[1rem]">Home</a>
-        <a href="" class="text-[white] font-semibold text-[1rem]">About</a>
-        <a href="" class="text-[white] font-semibold text-[1rem]">Service</a>
-        <a href="" class="text-[white] font-semibold text-[1rem]">Portfolio</a>
-        <a href="" class="text-[white] font-semibold text-[1rem]">Contact Us</a>
+      <div class="w-[40%] mx-auto flex justify-between text-[white] nav">
+        <a href="#home" class="text-[white] font-semibold text-[1rem] link"
+          >Home</a
+        >
+        <a href="#about" class="text-[white] font-semibold text-[1rem] link"
+          >About</a
+        >
+        <a href="#service" class="text-[white] font-semibold text-[1rem] link"
+          >Service</a
+        >
+        <a href="#portfolio" class="text-[white] font-semibold text-[1rem] link"
+          >Portfolio</a
+        >
+        <a href="#contact" class="text-[white] font-semibold text-[1rem] link"
+          >Contact Us</a
+        >
       </div>
     </nav>
     <main>
-      <section class="section-1 w-[100%] bg-[#2F0468] flex">
-        <div class="pl-[2.5rem] pt-[7.5rem] ] w-[61%]">
-          <h1 class="text-[1.8rem] text-[white] font-semibold">
-            Hello,we are <br />
-            DeCreatives A <br />
-            web development company
-          </h1>
-          <p class="text-[white] text-[1.1rem] w-[90%] mt-[1rem]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-            gravida semper pellentesque interdum ultricies volutpat ornare.
-            Fermentum, facilisis quis mauris eu pulvinar nunc. Nunc nulla.
-          </p>
-          <button
-            class="btn-started w-[8rem] rounded-[5rem] bg-[white] p-[.6rem] mt-[1rem]"
-          >
-            Get Started
-          </button>
+      <section class="section-1 w-[100%] bg-[#2F0468] flex" id="home">
+        <div class="pl-[2.5rem] w-[61%] flex items-center">
+          <div>
+            <h1 class="text-[1.8rem] text-[white] font-semibold">
+              Hello,we are <br />
+              DeCreatives A <br />
+              web development company
+            </h1>
+            <p class="text-[white] text-[1.1rem] w-[90%] mt-[1rem] my-auto">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
+              gravida semper pellentesque interdum ultricies volutpat ornare.
+              Fermentum, facilisis quis mauris eu pulvinar nunc. Nunc nulla.
+            </p>
+            <button
+              class="btn-started w-[8rem] rounded-[5rem] bg-[white] p-[.6rem] mt-[1rem]"
+            >
+              Get in touch
+            </button>
+          </div>
         </div>
         <div class="w-[40%] pr-[.5rem]">
           <div class="flex justify-end pr-[4rem]">
@@ -52,7 +64,8 @@
       </section>
 
       <section
-        class="section-2 flex justify-between pt-[2.5rem] pl-[2rem] pr-[.5rem] pb-[2rem]"
+        class="section-2 flex justify-between pt-[2.5rem] pl-[2rem] pr-[.5rem] pb-[2rem] about-section"
+        id="about"
       >
         <div class="flex justify-center items-center w-[30%]">
           <div>
@@ -82,27 +95,31 @@
             </p>
           </div>
           <div class="bg-[#59CAFC] mt-[2.3rem] p-[1.5rem] w-[95%]">
-            <h3 class="text-[white] text-[1.2rem] font-semibold">
+            <h3
+              class="text-[white] text-[1.2rem] font-semibold hid about-child"
+            >
               100+ Completed Project
             </h3>
-            <p class="text-[white]">
+            <p class="text-[white] hid about-child">
               pl-[1rem] Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Odio gravida semper pellentesque interdum ultricies volutpat
               ornare.
             </p>
           </div>
           <div class="bg-[#CE336E] mt-[2rem] p-[1.5rem] font-semibold w-[95%]">
-            <h3 class="text-[white] text-[1.2rem] font-semibold">
+            <h3
+              class="text-[white] text-[1.2rem] font-semibold hid about-child"
+            >
               2+ Years of experience
             </h3>
-            <p class="text-[white]">
+            <p class="text-[white] hid about-child">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
               gravida semper pellentesque interdum ultricies volutpat ornare.
             </p>
           </div>
         </div>
       </section>
-      <section class="section-3 bg-[#2F0468] pt-[4rem] pb-[2rem]">
+      <section class="section-3 bg-[#2F0468] pt-[4rem] pb-[2rem]" id="service">
         <div class="flex justify-between pl-[4rem] pr-[4rem]">
           <div class="w-[15%] flex justify-center items-center">
             <div class="w-[22%]">
@@ -173,7 +190,7 @@
           </div>
         </div>
       </section>
-      <section class="section-4 pt-[3rem] pb-[2rem]">
+      <section class="section-4 pt-[3rem] pb-[2rem] testimonial">
         <div class="text-center">
           <h2 class="font-semibold text-[1.5rem]">Testimonals</h2>
           <h2 class="mt-[.8rem] font-semibold text-[1.5rem]">
@@ -197,14 +214,14 @@
               <img src="/assets/Star.svg" alt="" />
             </div>
             <div class="mt-[.7rem] pl-[1.5rem] pr-[1.5rem]">
-              <p class="text-[1rem] text-[white]">
+              <p class="text-[1rem] text-[white] hid testi-child">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
                 gravida semper pellentesque
               </p>
             </div>
             <div class="flex items-center mt-[.9rem]">
               <img src="/assets/man.svg" alt="CEO" />
-              <p class="ml-[.4rem] text-[white] text-[.9rem]">
+              <p class="ml-[.4rem] text-[white] text-[.9rem] hid testi-child">
                 Food Fare <br />CEO
               </p>
             </div>
@@ -220,14 +237,14 @@
               <img src="/assets/Star.svg" alt="" />
             </div>
             <div class="mt-[.7rem] pl-[1.5rem] pr-[1.5rem]">
-              <p class="text-[1rem] text-[white]">
+              <p class="text-[1rem] text-[white] hid testi-child">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
                 gravida semper pellentesque
               </p>
             </div>
             <div class="flex items-center mt-[.8rem]">
               <img src="/assets/man.svg" alt="CEO" />
-              <p class="ml-[.4rem] text-[white] text-[.9rem]">
+              <p class="ml-[.4rem] text-[white] text-[.9rem] hid testi-child">
                 Food Fare <br />CEO
               </p>
             </div>
@@ -243,14 +260,14 @@
               <img src="/assets/Star.svg" alt="" />
             </div>
             <div class="mt-[.7rem] pl-[1.5rem] pr-[1.5rem]">
-              <p class="text-[1rem] text-[white]">
+              <p class="text-[1rem] text-[white] hid testi-child">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
                 gravida semper pellentesque
               </p>
             </div>
             <div class="flex items-center mt-[.8rem]">
               <img src="/assets/man.svg" alt="CEO" />
-              <p class="ml-[.4rem] text-[white] text-[.9rem]">
+              <p class="ml-[.4rem] text-[white] text-[.9rem] hid testi-child">
                 Food Fare <br />CEO
               </p>
             </div>
@@ -262,7 +279,7 @@
           </div>
         </div>
       </section>
-      <section class="section-5">
+      <section class="section-5 pb-[2rem]" id="portfolio">
         <div class="text-center">
           <h2 class="text-[#2F0468] font-semibold text-[1.5rem]">Portfolio</h2>
           <h2 class="text-[#2F0468] font-semibold text-[1.4rem] mt-[.8rem]">
@@ -271,12 +288,13 @@
         </div>
         <div class="flex justify-between pr-[2rem] pl-[2rem] mt-[4rem]">
           <div class="w-[30%]">
-            <div>
+            <div class="student">
               <img
                 src="/assets/student.svg"
                 alt="StudentsHub"
                 class="w-[100%]"
               />
+              <div id="layer1"></div>
             </div>
 
             <div class="flex justify-between items-center mt-[1rem] pr-[.3rem]">
@@ -285,7 +303,7 @@
                 <p class="text-[.9rem]">Website/Landing Page</p>
               </div>
               <div>
-                <a href="#"
+                <a href="#" class="linkx"
                   ><img
                     src="/assets/arrow.svg"
                     alt="studenthub"
@@ -296,8 +314,9 @@
           </div>
 
           <div class="w-[30%]">
-            <div>
+            <div class="student">
               <img src="/assets/ncc.svg" alt="StudentsHub" class="w-[100%]" />
+              <div id="layer2"></div>
             </div>
 
             <div class="flex justify-between items-center mt-[1rem] pr-[.3rem]">
@@ -306,7 +325,7 @@
                 <p class="text-[.9rem]">Website/Landing Page</p>
               </div>
               <div>
-                <a href="#"
+                <a href="#" class="linkx"
                   ><img src="/assets/arrow.svg" alt="ncc" class="w-[80%]"
                 /></a>
               </div>
@@ -314,12 +333,13 @@
           </div>
 
           <div class="w-[30%]">
-            <div>
+            <div class="student">
               <img
                 src="/assets/foodfare.svg"
                 alt="StudentsHub"
                 class="w-[100%]"
               />
+              <div id="layer3"></div>
             </div>
 
             <div class="flex justify-between items-center mt-[1rem] pr-[.3rem]">
@@ -328,7 +348,7 @@
                 <p class="text-[.9rem]">Web app</p>
               </div>
               <div>
-                <a href="#"
+                <a href="#" class="linkx"
                   ><img src="/assets/arrow.svg" alt="foodfare" class="w-[80%]"
                 /></a>
               </div>
@@ -337,12 +357,13 @@
         </div>
         <div class="flex justify-between pr-[2rem] pl-[2rem] mt-[4rem]">
           <div class="w-[30%]">
-            <div>
+            <div class="student">
               <img
                 src="/assets/student.svg"
                 alt="StudentsHub"
                 class="w-[100%]"
               />
+              <div id="layer4"></div>
             </div>
 
             <div class="flex justify-between items-center mt-[1rem] pr-[.3rem]">
@@ -351,7 +372,7 @@
                 <p class="text-[.9rem]">Website/Landing Page</p>
               </div>
               <div>
-                <a href="#"
+                <a href="#" class="linkx"
                   ><img
                     src="/assets/arrow.svg"
                     alt="studenthub"
@@ -362,8 +383,9 @@
           </div>
 
           <div class="w-[30%]">
-            <div>
+            <div class="student">
               <img src="/assets/ncc.svg" alt="StudentsHub" class="w-[100%]" />
+              <div id="layer5"></div>
             </div>
 
             <div class="flex justify-between items-center mt-[1rem] pr-[.3rem]">
@@ -372,7 +394,7 @@
                 <p class="text-[.9rem]">Website/Landing Page</p>
               </div>
               <div>
-                <a href="#"
+                <a href="#" class="linkx"
                   ><img src="/assets/arrow.svg" alt="ncc" class="w-[80%]"
                 /></a>
               </div>
@@ -380,12 +402,13 @@
           </div>
 
           <div class="w-[30%]">
-            <div>
+            <div class="student">
               <img
                 src="/assets/foodfare.svg"
                 alt="StudentsHub"
                 class="w-[100%]"
               />
+              <div id="layer6"></div>
             </div>
 
             <div class="flex justify-between items-center mt-[1rem] pr-[.3rem]">
@@ -394,9 +417,96 @@
                 <p class="text-[.9rem]">Web app</p>
               </div>
               <div>
-                <a href="#"
+                <a href="#" class="linkx"
                   ><img src="/assets/arrow.svg" alt="foodfare" class="w-[80%]"
                 /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-5" id="contact">
+        <div
+          class="w-[70%] mx-auto text-center bg-[#2F0468] pr-[9rem] pl-[9rem] pt-[2rem] pb-[1rem]"
+        >
+          <h2 class="text-[white] font-semibold text-[1.4rem]">
+            Got A Project! Get in Touch
+          </h2>
+
+          <p class="text-[white] mt-[1rem] text-[1rem]">
+            Lorem ipsum dolor sit amet, elit. Odio gravida semper pellentesque
+            interdum ultricies volutpat ornare.
+          </p>
+          <button
+            class="btn-contact w-[8rem] rounded-[5rem] bg-[white] p-[.6rem] mt-[1rem]"
+          >
+            Contact
+          </button>
+        </div>
+      </section>
+      <section class="section-contact">
+        <div class="contact-div pr-[3rem] pl-[4rem] w-[75%]">
+          <div class="text-center">
+            <h2>Lets get your project started!</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
+              gravida sempe
+            </p>
+          </div>
+
+          <div class="flex mt-[4rem] justify-between">
+            <div class="w-[65%]">
+              <div class="flex justify-between">
+                <div>
+                  <input
+                    type="text"
+                    class="border-2 border-[black]"
+                  /><br /><br />
+                  <input type="text" class="border-2 border-[black]" />
+                </div>
+
+                <div>
+                  <input
+                    type="text"
+                    class="border-2 border-[black]"
+                  /><br /><br />
+                  <input type="text" class="border-2 border-[black]" />
+                </div>
+              </div>
+
+              <div class="mt-[3rem]">
+                <textarea
+                  name=""
+                  id=""
+                  cols="10"
+                  rows="4"
+                  placeholder="how can we assist?"
+                  class="border-2 border-[#2F0468] w-[100%]"
+                ></textarea
+                ><br />
+                <button
+                  class="w-[100%] rounded-[5rem] bg-[#2F0468] p-[.6rem] mt-[.7rem] text-center text-white"
+                >
+                  send request
+                </button>
+              </div>
+            </div>
+
+            <div class="w-[28%] border-2 border-[red]">
+              <div>
+                <img src="" alt="" /><span>Write to Us</span>
+                <p>decreativesminds@gmail.com</p>
+              </div>
+
+              <div>
+                <img src="" alt="" /><span>Our Office</span>
+                <p>Nigeris Enugu,Enugu</p>
+              </div>
+
+              <div>
+                <img src="" alt="" /><span>Call Us</span>
+                <p>+2349563839367</p>
               </div>
             </div>
           </div>
