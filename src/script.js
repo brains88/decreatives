@@ -115,7 +115,6 @@ linkx[5].addEventListener("mouseout", function () {
 });
 
 //text reveal onscroll functionality
-
 let aboutSection = document.querySelector(".about-section");
 let aboutChildren = document.querySelectorAll(".about-child");
 let testimonialSection = document.querySelector(".testimonial");
