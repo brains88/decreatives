@@ -140,3 +140,16 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   revealText(testimonialSection, testiomonialChildren);
 });
+
+//contact page reveal functionality
+
+let btnContact = document.querySelector(".btn-contact");
+let contactPage = document.querySelector("#contact-page");
+
+btnContact.addEventListener("click", function () {
+  layerx(contactPage);
+});
+
+contactPage.addEventListener("click", function () {
+  hoverOff(contactPage);
+});
