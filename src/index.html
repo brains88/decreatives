@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <nav class="w-[100%] p-[1rem] bg-[#2F0468]">
-      <div class="w-[40%] mx-auto flex justify-between text-[white] nav">
+    <nav class="hidden md:block lg:w-[100%] lg:p-[1rem] bg-[#2F0468]">
+      <div
+        class="lg:w-[40%] md:w-[55%] mx-auto flex justify-between text-[white] nav"
+      >
         <a href="#home" class="text-[white] font-semibold text-[1rem] link"
           >Home</a
         >
@@ -28,85 +30,130 @@
       </div>
     </nav>
     <main>
-      <section class="section-1 w-[100%] bg-[#2F0468] flex" id="home">
-        <div class="pl-[2.5rem] w-[61%] flex items-center">
+      <section
+        class="section-1 bg-[#2F0468] md:flex sm:w-[100%] w-[full] pb-[1.5rem] md:pb-[0]"
+        id="home"
+      >
+        <div
+          class="w-[100%] pl-[1.5rem] md:pl-[2.5rem] md:w-[61%] flex items-center"
+        >
           <div>
-            <h1 class="text-[1.8rem] text-[white] font-semibold">
+            <h1
+              class="text-[1.4rem] lg:text-[1.8rem] text-[white] font-semibold md:text-[1.6rem]"
+            >
               Hello,we are <br />
               DeCreatives A <br />
               web development company
             </h1>
-            <p class="text-[white] text-[1.1rem] w-[90%] mt-[1rem] my-auto">
+            <p
+              class="text-[white] text-[1rem] mt-[.9rem] w-[90%] lg:mt-[1rem] md:mt-[.7rem] my-auto"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
               gravida semper pellentesque interdum ultricies volutpat ornare.
               Fermentum, facilisis quis mauris eu pulvinar nunc. Nunc nulla.
             </p>
             <button
-              class="btn-started w-[8rem] rounded-[5rem] bg-[white] p-[.6rem] mt-[1rem]"
+              class="btn-started w-[8rem] md:block hidden rounded-[5rem] bg-[white] p-[.6rem] lg:mt-[1rem] md:mt-[.5rem]"
             >
               Get in touch
             </button>
           </div>
         </div>
-        <div class="w-[40%] pr-[.5rem]">
-          <div class="flex justify-end pr-[4rem]">
-            <div class="w-[9%]">
+        <div class="w-[80%] mx-auto md:w-[40%] pr-[.5rem] pt-[3rem] md:pt-[0]">
+          <div class="justify-end pr-[4rem] hidden md:flex">
+            <div class="w-[9%] hidden md:block">
               <img src="/assets/Vector3.svg" alt="vector3" />
             </div>
           </div>
-          <div class="mt-[5.8rem] w-[34%]">
+          <div class="hidden md:block mt-[5.8rem] w-[34%] xl:ml-[-.4rem]">
             <img src="/assets/Ellipse 4.svg" alt="" />
           </div>
-          <div class="mt-[-1.5rem] z-[100] pl-[1.7rem]">
+          <div
+            class="w-[91%] mx-auto md:w-[100%] md:mt-[-1.4rem] lg:mt-[-1.6rem] z-[100] md:pl-[.8rem] lg:pl-[1.5rem] xl:pl-[1.8rem] xl:mt-[-1.7rem]"
+          >
             <img src="/assets/laptop.svg" alt="laptopimage" />
           </div>
+        </div>
+        <div class="md:hidden pl-[1rem] mt-[3rem]">
+          <button
+            class="btn-started w-[8rem] md:hidden rounded-[5rem] bg-[white] p-[.6rem]"
+          >
+            Get in touch
+          </button>
         </div>
       </section>
 
       <section
-        class="section-2 flex justify-between pt-[2.5rem] pl-[2rem] pr-[.5rem] pb-[2rem] about-section"
+        class="section-2 w-full md:flex md:justify-between pt-[2.5rem] md:pl-[2rem] md:pr-[.5rem] pb-[2rem] about-section"
         id="about"
       >
-        <div class="flex justify-center items-center w-[30%]">
+        <div class="justify-center items-center w-[30%] hidden md:flex">
           <div>
             <div
               class="w-[60%] round pr[7rem] pl-[.5rem] pt-[1rem] z-[100] pb-[1rem] bg-[#2F0468] outline-dashed outline-[.3rem] outline-offset-[.4rem] outline-indigo-700"
             >
-              <div class="mr-[-6.5rem] mb-[-1rem] z-[200]">
+              <div class="mr-[-6.5rem] mb-[0rem] z-[200]">
                 <img src="/assets/girl.svg" alt="" />
               </div>
             </div>
           </div>
         </div>
 
-        <div class="w-[66%] pr-[2rem]">
-          <div class="pl-[1.5rem]">
-            <h2 class="text-[#2F0468] font-semibold text-[1.5rem]">About Us</h2>
+        <div
+          class="lg:w-[66%] text-center md:text-start w-[100%] md:pr-[1rem] md:w-[70%] md:pl-[2.5rem] pl-[1.5rem] pr-[1.5rem]"
+        >
+          <div class="md:pl-[1.5rem] text-center md:text-start">
+            <h2
+              class="text-[#2F0468] font-semibold md:text-[1.5rem] text-[1.4rem]"
+            >
+              About Us
+            </h2>
           </div>
-          <div class="w-[90%] mx-auto pt-[2rem]">
-            <h2 class="text-[#2F0468] font-semibold text-[1.4rem]">
+          <div
+            class="w-[95%] mx-auto pt-[.5rem] md:pt-[1.8rem] md:w-[95%] text-center md:text-start"
+          >
+            <h2
+              class="text-[#2F0468] font-semibold md:text-[1.4rem] text-[1.1rem]"
+            >
               Designing And Creating User Friendly<br />
               Solutions For Clients.
             </h2>
-            <p class="text-[#2F0468]">
+            <p class="text-[#2F0468] mt-[.7rem] text-[1rem]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
               gravida semper pellentesque interdum ultricies volutpat ornare.
               Fermentum, facilisis quis mauris eu pulvinar nunc. Nunc nulla.
             </p>
           </div>
-          <div class="bg-[#59CAFC] mt-[2.3rem] p-[1.5rem] w-[95%]">
+          <div
+            class="justify-center items-center w-[80%] mx-auto pt-[3rem] pb-[1.6rem] flex md:hidden"
+          >
+            <div>
+              <div
+                class="w-[65%] round pr[7rem] pl-[.5rem] pt-[.2rem] z-[100] pb-[1rem] bg-[#2F0468] outline-dashed outline-[.3rem] outline-offset-[.4rem] outline-indigo-700"
+              >
+                <div class="mr-[-7rem] mb-[0rem] z-[200]">
+                  <img src="/assets/girl.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-[#59CAFC] mt-[2.3rem] md:p-[1.5rem] lg:w-[95%] md:w-[100%] p-[1rem] text-start"
+          >
             <h3
-              class="text-[white] text-[1.2rem] font-semibold hid about-child"
+              class="text-[white] text-[1rem] md:text-[1.2rem] font-semibold hid about-child"
             >
               100+ Completed Project
             </h3>
-            <p class="text-[white] hid about-child">
+            <p class="text-[white] hid about-child text-[1rem]">
               pl-[1rem] Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Odio gravida semper pellentesque interdum ultricies volutpat
               ornare.
             </p>
           </div>
-          <div class="bg-[#CE336E] mt-[2rem] p-[1.5rem] font-semibold w-[95%]">
+          <div
+            class="bg-[#CE336E] mt-[2rem] p-[1rem] md:p-[1.5rem] font-semibold lg:w-[95%] md:w-[100%] text-start"
+          >
             <h3
               class="text-[white] text-[1.2rem] font-semibold hid about-child"
             >
@@ -120,28 +167,42 @@
         </div>
       </section>
       <section class="section-3 bg-[#2F0468] pt-[4rem] pb-[2rem]" id="service">
-        <div class="flex justify-between pl-[4rem] pr-[4rem]">
-          <div class="w-[15%] flex justify-center items-center">
-            <div class="w-[22%]">
+        <div
+          class="flex justify-between lg:pl-[4rem] lg:pr-[4rem] md:pl-[2rem] md:pr-[4rem]"
+        >
+          <div
+            class="md:w-[25%] lg:w-[15%] md:flex lg:justify-center md:items-center md:justify-start"
+          >
+            <div class="lg:w-[22%] md:w-[26%] md:block hidden">
               <img src="/assets/Vector3.svg" alt=" not found" />
             </div>
           </div>
-          <div class="w-[85%] text-center">
-            <h2 class="text-[white] font-semibold text-[1.5rem]">Services</h2>
+          <div
+            class="md:w-[87%] lg:w-[85%] text-center w-[90%] mx-auto md:mx-0"
+          >
+            <h2
+              class="text-[white] font-semibold md:text-[1.5rem] text-[1.4rem]"
+            >
+              Services
+            </h2>
             <h3
-              class="text-[white] font-semibold text-[1.4rem] mb-[.7rem] mt-[.3rem]"
+              class="text-[white] font-semibold mb-[.7rem] mt-[.5rem] md:text-[1.4rem] text-[1.1rem]"
             >
               Our Total Package! Let’s check it out.
             </h3>
-            <p class="w-[55%] mx-auto text-[white] text-[1rem]">
+            <p
+              class="md:w-[78%] lg:w-[55%] mx-auto text-[white] text-[1rem] w-[95%]"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
               gravida semper pellentesque interdum ultricies volutpat ornare.
             </p>
           </div>
         </div>
-        <div class="flex pr-[4rem] pl-[4rem] justify-between mt-[2rem]">
+        <div
+          class="md:flex md:pr-[1.2rem] md:pl-[1.2rem] lg:pr-[4rem] lg:pl-[4rem] md:justify-between mt-[2rem] md:w-[100%]"
+        >
           <div
-            class="w-[30%] bg-[white] text-center pt-[.8rem] pb-[.5rem] pl-[.4rem] pr-[.4rem]"
+            class="md:w-[32%] lg:w-[30%] bg-[white] text-center w-[69%] mx-auto mt-[1.5rem] md:mt-0 md:mx-0 md:pt-[.8rem] pb-[.6rem] md:pl-[.3rem] md:pr-[.3rem]"
           >
             <img src="/assets/UI.svg" alt="UI design" class="mx-auto" />
             <h3 class="mt-[.3rem] text-[#2F0468] text-[1rem]">
@@ -149,12 +210,12 @@
               DESIGN
             </h3>
             <p class="mt-[.3rem] text-[.9rem] text-[#2F0468]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-              gravida semper pellentesque
+              Lorem ipsum dolor sit amet, adipiscing elit. Odio gravida semper
+              pellentesque
             </p>
           </div>
           <div
-            class="w-[30%] bg-[white] text-center pt-[.8rem] pb-[.5rem] pl-[.4rem] pr-[.4rem]"
+            class="md:w-[32%] w-[69%] mx-auto md:mx-0 mt-[1.5rem] md:mt-0 lg:w-[30%] bg-[white] text-center md:pt-[.8rem] pb-[.6rem] md:pl-[.3rem] md:pr-[.3rem]"
           >
             <img src="/assets/web.svg" alt="web design" class="mx-auto" />
             <h3 class="mt-[.3rem] text-[#2F0468] text-[1rem]">
@@ -167,7 +228,7 @@
             </p>
           </div>
           <div
-            class="w-[30%] bg-[white] text-center pt-[.8rem] pb-[.5rem] pl-[.4rem] pr-[.4rem]"
+            class="md:w-[32%] w-[69%] mx-auto md:mx-0 lg:w-[30%] bg-[white] text-center md:pt-[.8rem] pb-[.6rem] md:pl-[.3rem] md:pr-[.3rem] mt-[1.5rem] md:mt-0"
           >
             <img
               src="/assets/develop.svg"
@@ -185,26 +246,32 @@
           </div>
         </div>
         <div class="flex justify-end mt-[1rem] pr-[1.5rem]">
-          <div class="w-[3.2%] flex justify-end">
+          <div class="md:w-[3.2%] flex justify-end w-[6%]">
             <img src="/assets/Vector3.svg" alt=" not found" />
           </div>
         </div>
       </section>
       <section class="section-4 pt-[3rem] pb-[2rem] testimonial">
         <div class="text-center">
-          <h2 class="font-semibold text-[1.5rem]">Testimonals</h2>
-          <h2 class="mt-[.8rem] font-semibold text-[1.5rem]">
+          <h2 class="font-semibold md:text-[1.5rem] text-[1.4rem]">
+            Testimonals
+          </h2>
+          <h2
+            class="mt-[.4rem] md:mt-[.6rem] font-semibold md:text-[1.4rem] text-[1.1rem]"
+          >
             What people have to say about us
           </h2>
         </div>
-        <div class="pl-[7.5rem]">
-          <div class="w-[50%]">
+        <div class="md:pl-[5rem] lg:pl-[7.5rem]">
+          <div class="md:w-[30%] lg:w-[50%]">
             <img src="/assets/partypopper.svg" alt="partypopper" />
           </div>
         </div>
-        <div class="flex justify-between pr-[2rem] pl-[2rem] mt-[2rem]">
+        <div
+          class="md:flex md:justify-between md:pr-[1rem] md:pl-[1rem] lg:pr-[2rem] lg:pl-[2rem] mt-[2rem]"
+        >
           <div
-            class="w-[31%] pr-[.7rem] pl-[.7rem] bg-[#2f0468bb] pt-[1.5rem] pb-[.8rem]"
+            class="md:w-[32%] lg:w-[31%] md:pr-[.2rem] md:pl-[.2rem] md:pt-[.8rem] md:pb-[.8rem] lg:pr-[.7rem] lg:pl-[.7rem] bg-[#2f0468bb] lg:pt-[1.5rem] lg:pb-[.8rem]"
           >
             <div class="flex justify-center">
               <img src="/assets/Star.svg" alt="" />
@@ -213,13 +280,15 @@
               <img src="/assets/Star.svg" alt="" />
               <img src="/assets/Star.svg" alt="" />
             </div>
-            <div class="mt-[.7rem] pl-[1.5rem] pr-[1.5rem]">
+            <div
+              class="mt-[.7rem] md:pr-[.7rem] md:pl-[1rem] lg:pl-[1.5rem] lg:pr-[1.5rem]"
+            >
               <p class="text-[1rem] text-[white] hid testi-child">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
                 gravida semper pellentesque
               </p>
             </div>
-            <div class="flex items-center mt-[.9rem]">
+            <div class="flex items-center md:mt-[.8rem] lg:mt-[.9rem]">
               <img src="/assets/man.svg" alt="CEO" />
               <p class="ml-[.4rem] text-[white] text-[.9rem] hid testi-child">
                 Food Fare <br />CEO
@@ -227,7 +296,7 @@
             </div>
           </div>
           <div
-            class="w-[31%] bg-[#2f0468bb] pb-[.8rem] pt-[1.5rem] pr-[.7rem] pl-[.7rem]"
+            class="md:w-[32%] lg:w-[31%] md:pr-[.2rem] md:pl-[.2rem] md:pt-[.8rem] md:pb-[.8rem] lg:pr-[.7rem] lg:pl-[.7rem] bg-[#2f0468bb] lg:pt-[1.5rem] lg:pb-[.8rem]"
           >
             <div class="flex justify-center">
               <img src="/assets/Star.svg" alt="" />
@@ -236,7 +305,9 @@
               <img src="/assets/Star.svg" alt="" />
               <img src="/assets/Star.svg" alt="" />
             </div>
-            <div class="mt-[.7rem] pl-[1.5rem] pr-[1.5rem]">
+            <div
+              class="mt-[.7rem] md:pr-[.7rem] md:pl-[1rem] lg:pl-[1.5rem] lg:pr-[1.5rem]"
+            >
               <p class="text-[1rem] text-[white] hid testi-child">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
                 gravida semper pellentesque
@@ -250,7 +321,7 @@
             </div>
           </div>
           <div
-            class="w-[31%] pb-[.8rem] pt-[1.5rem] bg-[#2f0468bb] pr-[.7rem] pl-[.7rem]"
+            class="md:w-[32%] lg:w-[31%] md:pr-[.2rem] md:pl-[.2rem] md:pt-[.8rem] md:pb-[.8rem] lg:pr-[.7rem] lg:pl-[.7rem] bg-[#2f0468bb] lg:pt-[1.5rem] lg:pb-[.8rem]"
           >
             <div class="flex justify-center">
               <img src="/assets/Star.svg" alt="" />
@@ -259,7 +330,9 @@
               <img src="/assets/Star.svg" alt="" />
               <img src="/assets/Star.svg" alt="" />
             </div>
-            <div class="mt-[.7rem] pl-[1.5rem] pr-[1.5rem]">
+            <div
+              class="mt-[.7rem] md:pr-[.7rem] md:pl-[1rem] lg:pl-[1.5rem] lg:pr-[1.5rem]"
+            >
               <p class="text-[1rem] text-[white] hid testi-child">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
                 gravida semper pellentesque
@@ -274,11 +347,12 @@
           </div>
         </div>
         <div class="flex justify-end pr-[4rem] mt-[2rem]">
-          <div class="w-[50%] flex justify-end">
+          <div class="md:w-[30%] lg:w-[50%] md:flex md:justify-end">
             <img src="/assets/partypopper.svg" alt="" />
           </div>
         </div>
       </section>
+
       <section class="section-5 pb-[2rem]" id="portfolio">
         <div class="text-center">
           <h2 class="text-[#2F0468] font-semibold text-[1.5rem]">Portfolio</h2>
@@ -286,8 +360,10 @@
             Digital Product Showcase
           </h2>
         </div>
-        <div class="flex justify-between pr-[2rem] pl-[2rem] mt-[4rem]">
-          <div class="w-[30%]">
+        <div
+          class="md:flex md:justify-between md:pr-[1rem] md:pl-[1rem] lg:pr-[2rem] lg:pl-[2rem] mt-[2rem] lg:mt[4rem]"
+        >
+          <div class="md:w-[31%] lg:w-[30%] w-[80%] mx-auto md:mx-0">
             <div class="student">
               <img
                 src="/assets/student.svg"
@@ -307,13 +383,15 @@
                   ><img
                     src="/assets/arrow.svg"
                     alt="studenthub"
-                    class="w-[80%]"
+                    class="w-[90%] md:w-[80%]"
                 /></a>
               </div>
             </div>
           </div>
 
-          <div class="w-[30%]">
+          <div
+            class="md:w-[31%] lg:w-[30%] w-[80%] mx-auto md:mx-0 mt-[2.5rem] md:mt-[0]"
+          >
             <div class="student">
               <img src="/assets/ncc.svg" alt="StudentsHub" class="w-[100%]" />
               <div id="layer2"></div>
@@ -326,13 +404,18 @@
               </div>
               <div>
                 <a href="#" class="linkx"
-                  ><img src="/assets/arrow.svg" alt="ncc" class="w-[80%]"
+                  ><img
+                    src="/assets/arrow.svg"
+                    alt="ncc"
+                    class="w-[90%] md:w-[80%]"
                 /></a>
               </div>
             </div>
           </div>
 
-          <div class="w-[30%]">
+          <div
+            class="md:w-[31%] lg:w-[30%] w-[80%] mx-auto md:mx-0 mt-[2.5rem] md:mt-[0]"
+          >
             <div class="student">
               <img
                 src="/assets/foodfare.svg"
@@ -349,14 +432,19 @@
               </div>
               <div>
                 <a href="#" class="linkx"
-                  ><img src="/assets/arrow.svg" alt="foodfare" class="w-[80%]"
+                  ><img
+                    src="/assets/arrow.svg"
+                    alt="foodfare"
+                    class="w-[90%] md:w-[80%]"
                 /></a>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex justify-between pr-[2rem] pl-[2rem] mt-[4rem]">
-          <div class="w-[30%]">
+        <div
+          class="md:flex md:justify-between md:pr-[1rem] md:pl-[1rem] lg:pr-[2rem] lg:pl-[2rem] mt-[4rem]"
+        >
+          <div class="md:w-[31%] lg:w-[30%] w-[80%] mx-auto md:mx-0">
             <div class="student">
               <img
                 src="/assets/student.svg"
@@ -376,13 +464,15 @@
                   ><img
                     src="/assets/arrow.svg"
                     alt="studenthub"
-                    class="w-[80%]"
+                    class="w-[90%] md:w-[80%]"
                 /></a>
               </div>
             </div>
           </div>
 
-          <div class="w-[30%]">
+          <div
+            class="md:w-[31%] lg:w-[30%] w-[80%] mx-auto md:mx-0 mt-[2.5rem] md:mt-[0]"
+          >
             <div class="student">
               <img src="/assets/ncc.svg" alt="StudentsHub" class="w-[100%]" />
               <div id="layer5"></div>
@@ -395,13 +485,18 @@
               </div>
               <div>
                 <a href="#" class="linkx"
-                  ><img src="/assets/arrow.svg" alt="ncc" class="w-[80%]"
+                  ><img
+                    src="/assets/arrow.svg"
+                    alt="ncc"
+                    class="w-[90%] md:w-[80%]"
                 /></a>
               </div>
             </div>
           </div>
 
-          <div class="w-[30%]">
+          <div
+            class="md:w-[31%] lg:w-[30%] w-[80%] mx-auto md:mx-0 mt-[2.5rem] md:mt-[0]"
+          >
             <div class="student">
               <img
                 src="/assets/foodfare.svg"
@@ -418,7 +513,10 @@
               </div>
               <div>
                 <a href="#" class="linkx"
-                  ><img src="/assets/arrow.svg" alt="foodfare" class="w-[80%]"
+                  ><img
+                    src="/assets/arrow.svg"
+                    alt="foodfare"
+                    class="w-[90%] md:w-[80%]"
                 /></a>
               </div>
             </div>
@@ -428,7 +526,7 @@
 
       <section class="section-5" id="contact">
         <div
-          class="w-[70%] mx-auto text-center bg-[#2F0468] pr-[9rem] pl-[9rem] pt-[2rem] pb-[1rem]"
+          class="md:w-[80%] w-[90%] mx-auto lg:w-[70%] text-center bg-[#2F0468] md:pr-[9rem] md:pl-[9rem] pt-[2rem] pb-[1.5rem] p-[1.5rem] pl-[1.5rem]"
         >
           <h2 class="text-[white] font-semibold text-[1.4rem]">
             Got A Project! Get in Touch
@@ -445,8 +543,8 @@
           </button>
         </div>
       </section>
-      <section class="section-contact">
-        <div class="contact-div pr-[3rem] pl-[4rem] w-[75%]">
+      <section class="section-contact" id="contact-page">
+        <div class="contact-div pr-[3rem] pl-[4rem] w-[75%] mx-auto my-[auto]">
           <div class="text-center">
             <h2>Lets get your project started!</h2>
             <p>
@@ -480,7 +578,7 @@
             </form>
             </div>
 
-            <div class="w-[28%] border-2 border-[red]">
+            <div class="w-[28%]">
               <div>
                 <img src="" alt="" /><span>Write to Us</span>
                 <p>decreativesminds@gmail.com</p>
@@ -500,6 +598,126 @@
         </div>
       </section>
     </main>
+
+    <footer class="mt-[14rem]">
+      <div class="md:flex justify-between md:justify-end md:pr-[4rem]">
+        <div class="flex w-[90%] mx-auto md:mx-0 justify-between md:w-[50%]">
+          <div class="w-[50%] md:w-[100%]">
+            <h3 class="text-[.9rem] md:text-[1.1rem] font-semibold">
+              About Us
+            </h3>
+            <p class="text-[.8rem] text-[#2F0468] mt-[.5rem]">Mixer Events</p>
+            <p class="text-[.8rem] text-[#2F0468] mt-[.5rem]">Affiliates</p>
+            <p class="text-[.8rem] text-[#2F0468] mt-[.5rem]">Privacy Policy</p>
+            <p class="text-[.8rem] text-[#2F0468] mt-[.5rem]">
+              Terms of Service
+            </p>
+          </div>
+
+          <div class="w-[50%] md:w-[100%]">
+            <h3 class="md:text-[1.1rem] font-semibold">Support</h3>
+            <p class="text-[.8rem] text-[#2F0468] mt-[.5rem]">Help Center</p>
+            <p class="text-[.8rem] text-[#2F0468] mt-[.5rem]">FAQs</p>
+          </div>
+
+          <div class="hidden md:block">
+            <h3 class="text-[1.1rem] font-semibold">Contact</h3>
+            <p class="text-[.8rem] text-[#2F0468] mt-[.5rem]">Address</p>
+            <p class="text-[.8rem] text-[#2F0468] mt-[.5rem]">
+              21 clearwaters pl
+            </p>
+            <h3 class="text-[1rem] font-semibold mt-[.3rem]">phone Number</h3>
+            <p class="text-[.7rem] text-[#2F0468] mt-[.4rem]">09163375839</p>
+          </div>
+        </div>
+
+        <div class="md:hidden flex w-[90%] mx-auto justify-between mt-[.2rem]">
+          <div class="w-[50%]">
+            <h3 class="text-[.9rem] font-semibold">phone Number</h3>
+            <p class="text-[.8rem] text-[#2F0468] mt-[.4rem]">09163375839</p>
+          </div>
+          <div class="w-[50%]">
+            <h3 class="text-[.9rem] font-semibold">Contact</h3>
+            <p class="text-[.8rem] text-[#2F0468] mt-[.4rem]">Address</p>
+            <p class="text-[.8rem] text-[#2F0468] mt-[.4rem]">
+              21 clearwaters pl
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:pl-[3rem] md:mt-[4rem] mt-[2rem]">
+        <div class="pl-[2rem] md:pl-0">
+          <h2 class="text-[grey] font- md:text-[1.2rem] text-[1.1rem]">
+            Get update
+          </h2>
+        </div>
+
+        <div
+          class="flex justify-between mx-auto md:mx-0 w-[100%] md:w-[70%] pl-[2rem] md:pl-0"
+        >
+          <div class="md:w-[60%] w-[85%]">
+            <p class="mt-[.3rem] text-[#2f04686c] font-semibold text-[.9rem]">
+              We are growing fast. Get daily updates
+            </p>
+            <div class="flex w-[100%] justify-between mt-[1.3rem]">
+              <input
+                type="text"
+                placeholder="Enter your email address"
+                class="w-[68%] md:w-[70%] border-2 border-[grey] p-[.4rem] rounded-[.4rem]"
+              /><button
+                class="md:w-[27%] w-[28%] p-[.4rem] text-white bg-[#2F0468] rounded-[.4rem]"
+              >
+                Join now
+              </button>
+            </div>
+          </div>
+
+          <div class="md:w-[30%] md:block hidden w-[10%]">
+            <h3
+              class="text-[1rem font-semibold] text-[#2F0468] font-semibold text-[1rem]"
+            >
+              Follow us on social media
+            </h3>
+            <div class="flex mt-[2rem] justify-between items-center">
+              <a href="#" class="w-[6%]"
+                ><img src="/assets/faceicon.svg" alt="facebook-account"
+              /></a>
+              <a href="#" class="w-[10%]"
+                ><img src="/assets/twitericon.svg" alt="twitter"
+              /></a>
+              <a href="#" class="w-[10%]"
+                ><img src="/assets/linkedicon.svg" alt="linkedIn"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-[30%] md:hidden w-[40%] mx-auto text-center mt-[3rem]">
+          <h3 class="font-semibold] text-[#2F0468] font-semibold text-[1rem]">
+            Follow us on social media
+          </h3>
+          <div class="flex mt-[1.5rem] justify-between items-center">
+            <a href="#" class="w-[6%]"
+              ><img src="/assets/faceicon.svg" alt="facebook-account"
+            /></a>
+            <a href="#" class="w-[10%]"
+              ><img src="/assets/twitericon.svg" alt="twitter"
+            /></a>
+            <a href="#" class="w-[10%]"
+              ><img src="/assets/linkedicon.svg" alt="linkedIn"
+            /></a>
+          </div>
+        </div>
+
+        <div
+          class="flex justify-end lg:pr-[5rem] md:pr-[.5rem] md:mt-[.5rem] mt-[.9rem]"
+        >
+          <p class="text-[.8rem] text-[#808080aa]">
+            © 2023 DeCreatives. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
