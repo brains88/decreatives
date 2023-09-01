@@ -145,11 +145,16 @@ window.addEventListener("scroll", function () {
 
 let btnContact = document.querySelector(".btn-contact");
 let contactPage = document.querySelector("#contact-page");
+let contactChild = document.querySelector("#contact-child");
 
 btnContact.addEventListener("click", function () {
   layerx(contactPage);
+  contactChild.classList.add(animatee);
 });
 
-contactPage.addEventListener("click", function () {
-  hoverOff(contactPage);
+//unction for disappearing the form page
+contactPage.addEventListener("click", function (e) {
+  if (e.target === this) {
+    contactPage.style.display = "none";
+  }
 });
