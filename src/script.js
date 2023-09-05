@@ -145,11 +145,48 @@ window.addEventListener("scroll", function () {
 
 let btnContact = document.querySelector(".btn-contact");
 let contactPage = document.querySelector("#contact-page");
+let contactChild = document.querySelector("#contact-child");
 
 btnContact.addEventListener("click", function () {
   layerx(contactPage);
+  contactChild.classList.add(animatee);
 });
 
-contactPage.addEventListener("click", function () {
-  hoverOff(contactPage);
+//unction for disappearing the form page
+contactPage.addEventListener("click", function (e) {
+  if (e.target === this) {
+    contactPage.style.display = "none";
+  }
+});
+
+//mobile contact
+
+let slideParent = document.querySelector(".div-container");
+let goTo = document.querySelectorAll(".go-to");
+
+goTo.forEach(function (li) {
+  li.addEventListener("click", function (e) {
+    e.preventDefault();
+    let eacHref = this.getAttribute("href");
+    document.querySelector(eacHref).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
+
+let menu = document.querySelector(".menu");
+menu.addEventListener("click", function () {
+  layerx(slideParent);
+});
+
+slideParent.addEventListener("click", function (e) {
+  targeted = e.target;
+  goTo.forEach(function (el) {
+    if (el == targeted) {
+      el.classList.add("go-too");
+      slideParent.style.display = "none";
+    } else {
+      el.classList.remove("go-too");
+    }
+  });
 });
