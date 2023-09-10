@@ -6,6 +6,10 @@
     <title>Document</title>
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <nav class="hidden md:block lg:w-[100%] lg:p-[1rem] bg-[#2F0468]">
@@ -48,13 +52,6 @@
             <p class="mt-[1rem]">
               <a
                 class="go-to text-[1rem] font-semibold text-[#2F0468]"
-                href="#about"
-                >About</a
-              >
-            </p>
-            <p class="mt-[1rem]">
-              <a
-                class="go-to text-[1rem] font-semibold text-[#2F0468]"
                 href="#service"
                 >About</a
               >
@@ -63,6 +60,13 @@
               <a
                 class="go-to text-[1rem] font-semibold text-[#2F0468]"
                 href="#portfolio"
+                >Service</a
+              >
+            </p>
+            <p class="mt-[1rem]">
+              <a
+                class="go-to text-[1rem] font-semibold text-[#2F0468]"
+                href="#contact"
                 >Portfolio</a
               >
             </p>
@@ -88,16 +92,14 @@
             <h1
               class="text-[1.4rem] lg:text-[1.8rem] text-[white] font-semibold md:text-[1.6rem]"
             >
-              Hello,we are <br />
-              DeCreatives A <br />
-              web development company
+              Hi, <br />
+              Welcome to Nexainnova!
             </h1>
             <p
               class="text-[white] text-[1rem] mt-[1rem] w-[90%] lg:mt-[1rem] md:mt-[.7rem] my-auto"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-              gravida semper pellentesque interdum ultricies volutpat ornare.
-              Fermentum, facilisis quis mauris eu pulvinar nunc. Nunc nulla.
+              we are web development company that focuses on building projects
+              that are beneficial to youths and the society at large.
             </p>
             <button
               class="btn-started w-[8rem] md:block hidden rounded-[5rem] bg-[white] p-[.6rem] lg:mt-[1rem] md:mt-[.5rem]"
@@ -166,9 +168,10 @@
               Solutions For Clients.
             </h2>
             <p class="text-[#2F0468] mt-[.7rem] text-[1rem]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-              gravida semper pellentesque interdum ultricies volutpat ornare.
-              Fermentum, facilisis quis mauris eu pulvinar nunc. Nunc nulla.
+              Nexainnova is targeted at making life simple and enjoyable with
+              the use of technology by providing our customers with innovative
+              solutions that are able to meet their requirements as well as
+              satisfaction.
             </p>
           </div>
           <div
@@ -201,9 +204,10 @@
             </div>
 
             <p class="text-[white] hid about-child text-[1rem] xl:mt-[.4rem]">
-              pl-[1rem] Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Odio gravida semper pellentesque interdum ultricies volutpat
-              ornare.
+              We are a group that sees and encourages the power of teamwork.
+              Therefore, with the capable efforts of our team members, we have
+              over 100 completed projects and many others that are still in
+              progress.
             </p>
           </div>
           <div
@@ -221,8 +225,9 @@
             </div>
 
             <p class="text-[white] hid about-child xl:mt-[.4rem]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-              gravida semper pellentesque interdum ultricies volutpat ornare.
+              DeCreatives has been in existence for the past two years and
+              thrives to keep advancing as Time goes on by evolving to meet the
+              changing needs of the society.
             </p>
           </div>
         </div>
@@ -250,8 +255,8 @@
           <p
             class="md:w-[85%] lg:w-[65%] mx-auto text-[white] text-[1rem] w-[99%]"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-            gravida semper pellentesque interdum ultricies volutpat ornare.
+            In order to satisfy the demands of all our customers, we offer
+            various services that encompasses our total packages
           </p>
         </div>
 
@@ -267,8 +272,11 @@
               DESIGN
             </h3>
             <p class="mt-[.3rem] text-[.9rem] text-[#2F0468]">
-              Lorem ipsum dolor sit amet, adipiscing elit. Odio gravida semper
-              pellentesque
+              UI (User Interface) refers to the visual layout and elements of a
+              digital product, like buttons and menus. UX (User Experience)
+              involves the overall feel and interaction of users with the
+              product, aiming to make it easy, enjoyable, and efficient for them
+              to achieve their goals.
             </p>
           </div>
           <div
@@ -280,8 +288,10 @@
               DESIGN
             </h3>
             <p class="mt-[.3rem] text-[.9rem] text-[#2F0468]">
-              Lorem ipsum dolor sit amet, adipiscing elit. Odio gravida semper
-              pellentesque
+              Web flow design encompasses the process of planning, creating, and
+              arranging the visual and interactive elements of a website. It
+              involves designing layouts, navigation, and interactions to ensure
+              a user-friendly and visually appealing experience for visitors
             </p>
           </div>
           <div
@@ -297,8 +307,11 @@
               DEVELOPMENT
             </h3>
             <p class="mt-[.3rem] text-[.9rem] text-[#2F0468]">
-              Lorem ipsum dolor sit amet, adipiscing elit. Odio gravida semper
-              pellentesque
+              Application development involves the process of designing, coding,
+              and creating software programs or applications for specific
+              platforms or devices. It involves conceptualizing, designing the
+              user interface, writing code, testing, and deploying the
+              application to make it functional and usable by end-users.
             </p>
           </div>
         </div>
@@ -325,90 +338,113 @@
           </div>
         </div>
 
-        <div class="flow md:h-[17rem] lg:h-[260px] w-[100%] h-[290px]">
+        <div class="testiomonal mt-[3rem]">
           <div
-            class="flex slidee justify-between w-[200%] md:w-[100%] mt-[2rem]"
+            class="container w-[90%] md:w-[98%] lg:w-[88%] xl:w-[92%] mx-auto"
           >
-            <div
-              class="slide w-[30%] md:w-[32%] lg:w-[31%] md:pr-[.2rem] md:pl-[.6rem] md:pt-[.8rem] md:pb-[.8rem] lg:pr-[.7rem] lg:pl-[.7rem] bg-[#2f0468bb] lg:pt-[1.5rem] lg:pb-[.8rem]"
-            >
-              <div class="flex justify-center">
-                <img src="/assets/Star.svg" alt="" />
-                <img src="/assets/Star.svg" alt="" />
-                <img src="/assets/Star.svg" alt="" />
-                <img src="/assets/Star.svg" alt="" />
-                <img src="/assets/Star.svg" alt="" />
-              </div>
-              <div
-                class="mt-[.7rem] md:pr-[.7rem] md:pl-[1rem] lg:pl-[1.5rem] lg:pr-[1.5rem]"
-              >
-                <p class="text-[1rem] text-[white] hid testi-child">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-                  gravida semper pellentesque
-                </p>
-              </div>
-              <div class="flex items-center mt-[.8rem]">
-                <img src="/assets/man.svg" alt="CEO" />
-                <p class="ml-[.4rem] text-[white] text-[.9rem] hid testi-child">
-                  Food Fare <br />CEO
-                </p>
-              </div>
-            </div>
+            <div class="testimonial-content">
+              <div class="swiper testiomial-slider js-testimonial-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide testiomonial-item">
+                    <div class="inner bg-[#2f0468bb]">
+                      <div class="flex justify-center">
+                        <img src="/assets/Star.svg" alt="" />
+                        <img src="/assets/Star.svg" alt="" />
+                        <img src="/assets/Star.svg" alt="" />
+                        <img src="/assets/Star.svg" alt="" />
+                        <img src="/assets/Star.svg" alt="" />
+                      </div>
+                      <div
+                        class="mt-[.7rem] md:pr-[.7rem] md:pl-[1rem] lg:pl-[1.5rem] lg:pr-[1.5rem]"
+                      >
+                        <p class="text-[1rem] text-[white] hid testi-child">
+                          I have a wonderful business that lacked an online
+                          presence. All thanks to Nexainnova for developing such
+                          an amazing and user-friendly website for my business.
+                          My customers are excited because shopping is now made
+                          easier and business is running even more smoothly.
+                        </p>
+                      </div>
+                      <div class="flex items-center mt-[.8rem]">
+                        <img src="/assets/man.svg" alt="CEO" />
+                        <p
+                          class="ml-[.4rem] text-[white] text-[.9rem] hid testi-child"
+                        >
+                          Food Fare <br />CEO
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-            <div
-              class="slide w-[30%] md:w-[32%] lg:w-[31%] md:pr-[.2rem] md:pl-[.6rem] md:pt-[.8rem] md:pb-[.8rem] lg:pr-[.7rem] lg:pl-[.7rem] bg-[#2f0468bb] lg:pt-[1.5rem] lg:pb-[.8rem]"
-            >
-              <div class="flex justify-center">
-                <img src="/assets/Star.svg" alt="" />
-                <img src="/assets/Star.svg" alt="" />
-                <img src="/assets/Star.svg" alt="" />
-                <img src="/assets/Star.svg" alt="" />
-                <img src="/assets/Star.svg" alt="" />
-              </div>
-              <div
-                class="mt-[.7rem] md:pr-[.7rem] md:pl-[1rem] lg:pl-[1.5rem] lg:pr-[1.5rem]"
-              >
-                <p class="text-[1rem] text-[white] hid testi-child">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-                  gravida semper pellentesque
-                </p>
-              </div>
-              <div class="flex items-center mt-[.8rem]">
-                <img src="/assets/man.svg" alt="CEO" />
-                <p class="ml-[.4rem] text-[white] text-[.9rem] hid testi-child">
-                  Food Fare <br />CEO
-                </p>
-              </div>
-            </div>
+                  <div class="swiper-slide testiomonial-item">
+                    <div class="inner bg-[#2f0468bb]">
+                      <div class="flex justify-center">
+                        <img src="/assets/Star.svg" alt="" />
+                        <img src="/assets/Star.svg" alt="" />
+                        <img src="/assets/Star.svg" alt="" />
+                        <img src="/assets/Star.svg" alt="" />
+                        <img src="/assets/Star.svg" alt="" />
+                      </div>
+                      <div
+                        class="mt-[.7rem] md:pr-[.7rem] md:pl-[1rem] lg:pl-[1.5rem] lg:pr-[1.5rem]"
+                      >
+                        <p class="text-[1rem] text-[white] hid testi-child">
+                          I have a wonderful business that lacked an online
+                          presence. All thanks to Nexainnova for developing such
+                          an amazing and user-friendly website for my business.
+                          My customers are excited because shopping is now made
+                          easier and business is running even more smoothly.
+                        </p>
+                      </div>
+                      <div class="flex items-center mt-[.8rem]">
+                        <img src="/assets/woman.svg" alt="CEO" />
+                        <p
+                          class="ml-[.4rem] text-[white] text-[.9rem] hid testi-child"
+                        >
+                          Food Fare <br />CEO
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-            <div
-              class="slide w-[30%] md:w-[32%] lg:w-[31%] md:pr-[.2rem] md:pl-[.6rem] md:pt-[.8rem] md:pb-[.8rem] lg:pr-[.7rem] lg:pl-[.7rem] bg-[#2f0468bb] lg:pt-[1.5rem] lg:pb-[.8rem]"
-            >
-              <div class="flex justify-center">
-                <img src="/assets/Star.svg" alt="" />
-                <img src="/assets/Star.svg" alt="" />
-                <img src="/assets/Star.svg" alt="" />
-                <img src="/assets/Star.svg" alt="" />
-                <img src="/assets/Star.svg" alt="" />
+                  <div class="swiper-slide testiomonial-item">
+                    <div class="inner bg-[#2f0468bb]">
+                      <div class="flex justify-center">
+                        <img src="/assets/Star.svg" alt="" />
+                        <img src="/assets/Star.svg" alt="" />
+                        <img src="/assets/Star.svg" alt="" />
+                        <img src="/assets/Star.svg" alt="" />
+                        <img src="/assets/Star.svg" alt="" />
+                      </div>
+                      <div
+                        class="mt-[.7rem] md:pr-[.7rem] md:pl-[1rem] lg:pl-[1.5rem] lg:pr-[1.5rem]"
+                      >
+                        <p class="text-[1rem] text-[white] hid testi-child">
+                          I highly recommend Nexainnova to all growing
+                          companies. They can help you get started with your
+                          projects faster and and affordable.
+                        </p>
+                      </div>
+                      <div class="flex items-center mt-[.8rem]">
+                        <img src="/assets/woman.svg" alt="CEO" />
+                        <p
+                          class="ml-[.4rem] text-[white] text-[.9rem] hid testi-child"
+                        >
+                          Food Fare <br />CEO
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide testiomonial-item"></div>
+                </div>
               </div>
-              <div
-                class="mt-[.7rem] md:pr-[.7rem] md:pl-[1rem] lg:pl-[1.5rem] lg:pr-[1.5rem]"
-              >
-                <p class="text-[1rem] text-[white] hid testi-child">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-                  gravida semper pellentesque
-                </p>
-              </div>
-              <div class="flex items-center mt-[.8rem]">
-                <img src="/assets/man.svg" alt="CEO" />
-                <p class="ml-[.4rem] text-[white] text-[.9rem] hid testi-child">
-                  Food Fare <br />CEO
-                </p>
-              </div>
+              <div class="swiper-scrollbar js-testiomial-pagnation"></div>
             </div>
           </div>
         </div>
-        <div class="flex justify-end pr-[4rem] mt-[2rem]">
+
+        <div class="flex justify-end pr-[4rem] mt-[.5rem]">
           <div class="md:w-[30%] lg:w-[50%] md:flex md:justify-end">
             <img src="/assets/partypopper.svg" alt="" />
           </div>
@@ -596,8 +632,9 @@
           </h2>
 
           <p class="text-[white] mt-[1rem] text-[1rem]">
-            Lorem ipsum dolor sit amet, elit. Odio gravida semper pellentesque
-            interdum ultricies volutpat ornare.
+            We are always available at all times to respond to our valued
+            customers. We can be reached through our social media platforms as
+            well as our contacts provided below.
           </p>
           <button
             class="btn-contact w-[8rem] rounded-[5rem] bg-[white] p-[.6rem] mt-[1rem]"
@@ -618,8 +655,8 @@
               Let's get your project started!
             </h2>
             <p class="mt-[.3rem]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
-              gravida sempe
+              Don't sleep on that project! We are fully prepared to get your
+              project started or render our services at your disposal
             </p>
           </div>
 
@@ -701,7 +738,7 @@
                 />
                 <div class="w-[90%] lg:w-[85%]">
                   <p class="text-[.9rem]">Write to us</p>
-                  <p class="text-[.9rem]">decreativesminds@gmail.com</p>
+                  <p class="text-[.9rem]">nexainnova@gmail.com</p>
                 </div>
               </div>
 
@@ -853,11 +890,29 @@
           class="flex justify-end lg:pr-[5rem] md:pr-[.5rem] md:mt-[.5rem] mt-[.9rem]"
         >
           <p class="text-[.8rem] text-[#808080aa]">
-            © 2023 DeCreatives. All rights reserved.
+            © 2023 Nexainnova. All rights reserved.
           </p>
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".js-testimonial-slider", {
+        grabCursor: true,
+        spaceBetween: 20,
+        pagination: {
+          el: ".js-testiomial-pagnation",
+          clickable: true,
+        },
+
+        breakpoints: {
+          767: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
 
     <script src="script.js"></script>
   </body>
